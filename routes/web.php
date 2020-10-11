@@ -19,3 +19,6 @@ $router->get('/', ['uses' => 'QuizController@index', 'as' => 'home.index']);
 
 /* CONNEXION */
 $router->get('/connexion', ['uses' => 'LoginController@create', 'as' => 'login.create']);
+
+/* QUIZ */
+$router->get('/quiz-{quiz}/{slug}', ['uses' => 'QuizController@showQuiz', 'as' => 'quiz.showQuiz']);

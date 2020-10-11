@@ -17,4 +17,8 @@ class QuizController extends Controller
     public function index(){
         return view('quiz.index');
     }
+
+    public function showQuiz(){
+        return view('quiz.show-quiz');
+    }
 }

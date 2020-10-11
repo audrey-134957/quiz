@@ -123,9 +123,31 @@ a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/wild.jpg") !important;
 }
 
+.quizes-list__questions-number{
+    float: right;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
 .quizes-list__title {
+    display: block;
+    width: fit-content;
+    clear: both;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    border-bottom: solid 3px #fff;
+    /* border-bottom: solid 3px #fff; */
+}
+
+
+
+
+/* Quiz box */
+
+.quiz-box{
+    margin: 1rem;
 }
