@@ -186,9 +186,24 @@ input[type="checkbox"].quiz-box__checkbox {
     display: none;
 }
 
+.quiz-box__question-number {
+    display: block;
+    float: right;
+    background-color: rgb(255, 45, 45);
+    color:white;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+}
+
+.quiz-box__question {
+    clear: right;
+    margin-top: 1in;
+}
+
 .quiz-box__choice-description {
     display: flex;
-    border: solid 1px #F61E1E;
+    border: solid 1px #f61e1e;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
@@ -198,7 +213,7 @@ input[type="checkbox"].quiz-box__checkbox {
 .quiz-box__choice-letter-box {
     /* border-right: solid 1px red; */
     padding: 0.5rem 1rem;
-    background-color: #F61E1E;
+    background-color: #f61e1e;
     color: #fff;
     font-weight: 700;
     border-top-left-radius: 3px;

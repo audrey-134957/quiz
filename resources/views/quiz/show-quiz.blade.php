@@ -13,7 +13,8 @@
         <h3 class="quiz-box__title uk-card-title">Mythologie africaine</h3>
     </div>
     <div class="quiz-box__card-body uk-card-body">
-        <p>Lorem ipsum dolor sit amet ?</p>
+        <span class="quiz-box__question-number">Question 1 / 20</span>
+        <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
         <figure>
             <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
         </figure>
