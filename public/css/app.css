@@ -17,6 +17,7 @@ body {
 
 a {
     color: black !important;
+    text-decoration: none !important;
 }
 
 /* MAIN */
@@ -26,7 +27,6 @@ a {
     width: 100%;
     min-height: 100%;
     margin: 1.5rem 0;
-    /* background-color: #f7f7f7; */
 }
 
 /* THEMES LIST */
@@ -92,13 +92,40 @@ a {
 }
 
 .quizes-list__quiz-box {
-    /* border: solid 1px black; */
     min-height: 25vh;
     border-radius: 5px;
     margin: 0 1rem;
-    /* margin: 2rem 1rem; */
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
 }
 
-.quizes-list__quiz-box:not(:last-child) {
-    margin-bottom: 1rem;
+.quizes-list__quiz-box::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.quizes-list__quiz-box--geo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/geography.jpg") !important;
+}
+
+.quizes-list__quiz-box--history {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/history.jpg") !important;
+}
+
+.quizes-list__quiz-box--social-network {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)),
+        url("/images/boxes/social-networks.jpg") !important;
+}
+
+.quizes-list__quiz-box--wild {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/wild.jpg") !important;
+}
+
+.quizes-list__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: solid 3px #fff;
 }

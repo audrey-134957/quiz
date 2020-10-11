@@ -31,22 +31,41 @@
 
 <!-- liste des quiz -->
 <div class="quizes-list">
+    <a class="quizes-list__link" href="#">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--geo uk-card uk-card-default uk-card-body uk-margin-bottom">
+            <span class="quizes-list__title">Mythologie africaine</span>
+        </div>
+    </a>
 
-    <div class="quizes-list__quiz-box uk-card uk-card-default uk-card-body">
+    <a class="quizes-list__link" href="#">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body uk-margin-bottom">
+            <span class="quizes-list__title">Première guerre mondiale</span>
+        </div>
+    </a>
 
-    </div>
+    <a class="quizes-list__link" href="#">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body uk-margin-bottom">
+            <span class="quizes-list__title">Le 3e art</span>
+        </div>
+    </a>
 
-    <div class="quizes-list__quiz-box uk-card uk-card-default uk-card-body">
+    <a class="quizes-list__link" href="#">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body uk-margin-bottom">
+            <span class="quizes-list__title">Première guerre mondiale</span>
+        </div>
+    </a>
 
-    </div>
+    <a class="quizes-list__link" href="#">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--social-network uk-card uk-card-default uk-card-body uk-margin-bottom">
+            <span class="quizes-list__title">Seconde guerre mondiale</span>
+        </div>
+    </a>
 
-    <div class="quizes-list__quiz-box uk-card uk-card-default uk-card-body">
-
-    </div>
-
-    <div class="quizes-list__quiz-box uk-card uk-card-default uk-card-body">
-
-    </div>
+    <a class="quizes-list__link" href="#">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--wild uk-card uk-card-default uk-card-body">
+            <span class="quizes-list__title">Mythologie grecque</span>
+        </div>
+    </a>
 </div>
 
 @endsection
