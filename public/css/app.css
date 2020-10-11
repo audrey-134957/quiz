@@ -188,7 +188,7 @@ input[type="checkbox"].quiz-box__checkbox {
 
 .quiz-box__choice-description {
     display: flex;
-    border: solid 1px #8c62ff;
+    border: solid 1px #F61E1E;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
@@ -198,7 +198,7 @@ input[type="checkbox"].quiz-box__checkbox {
 .quiz-box__choice-letter-box {
     /* border-right: solid 1px red; */
     padding: 0.5rem 1rem;
-    background-color: #8c62ff;
+    background-color: #F61E1E;
     color: #fff;
     font-weight: 700;
     border-top-left-radius: 3px;

@@ -34,7 +34,7 @@
                 <input class="quiz-box__checkbox" type="checkbox">
                 <div class="quiz-box__choice-description">
                     <div class="quiz-box__choice-letter-box">
-                        A
+                        B
                     </div>
                     <div class="quiz-box__choice-answer-box">
                         <p class="quiz-box__choice-answer">réponse 2</p>
@@ -45,7 +45,7 @@
                 <input class="quiz-box__checkbox" type="checkbox">
                 <div class="quiz-box__choice-description">
                     <div class="quiz-box__choice-letter-box">
-                        A
+                        C
                     </div>
                     <div class="quiz-box__choice-answer-box">
                         <p class="quiz-box__choice-answer">réponse 3</p>
