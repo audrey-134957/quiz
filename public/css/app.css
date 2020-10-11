@@ -189,7 +189,7 @@ input[type="checkbox"].quiz-box__checkbox {
 .quiz-box__question-number {
     display: block;
     float: right;
-    background-color: rgb(255, 45, 45);
+    background-color: #f61e1e;
     color:white;
     font-weight: 700;
     border-radius: 5px;
