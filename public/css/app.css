@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: black !important;
+}
+
+/* MAIN */
+
+.main {
+    flex: 1;
+    width: 100%;
+    min-height: 100%;
+    margin: 1.5rem 0;
+    /* background-color: #f7f7f7; */
+}
+
+/* THEMES LIST */
+
+.themes-list {
+    margin: 0.5rem;
+}
+
+.themes-list__list-items {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.themes-list__list-items::-webkit-scrollbar {
+    display: none;
+}
+
+.themes-list__item {
+    display: inline-block;
+    background-color: #ff1616;
+    padding: 0.1rem 1rem;
+    border-radius: 5px;
+}
+
+.themes-list__item--active {
+    background-color: #ed0000;
+}
+
+.themes-list__link {
+    color: #fff !important;
+}
+
+.themes-list__item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: solid 5px #000;
+}
+
+.navbar__logo {
+    height: 35px;
+    width: 35px;
+}
+
+.navbar__icon--login {
+    font-size: 30px !important;
+}
+
+/*QUIZ BOX*/
+
+.quizes-list {
+    margin: 1in 0;
+}
+
+.quizes-list__quiz-box {
+    /* border: solid 1px black; */
+    min-height: 25vh;
+    border-radius: 5px;
+    margin: 0 1rem;
+    /* margin: 2rem 1rem; */
+}
+
+.quizes-list__quiz-box:not(:last-child) {
+    margin-bottom: 1rem;
+}
