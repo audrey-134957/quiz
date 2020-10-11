@@ -15,25 +15,42 @@
     <div class="quiz-box__card-body uk-card-body">
         <p>Lorem ipsum dolor sit amet ?</p>
         <figure>
-            <!-- <img src="/images/boxes/social-networks.jpg" alt=""> -->
             <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
         </figure>
         <div class="quiz-box__choices-list">
-            <label class="quiz-box__choice">
-                <input class="" type="checkbox">
-                <span>réponse 1</span>
+            <label class="quiz-box__choice uk-card uk-card-default">
+                <input class="quiz-box__checkbox" type="checkbox">
+                <div class="quiz-box__choice-description">
+                    <div class="quiz-box__choice-letter-box">
+                        A
+                    </div>
+                    <div class="quiz-box__choice-answer-box">
+                        <p class="quiz-box__choice-answer">réponse 1</p>
+                    </div>
+                </div>
             </label>
-            <label class="quiz-box__choice">
-                <input class="" type="checkbox">
-                <span>réponse 2</span>
+
+            <label class="quiz-box__choice uk-card uk-card-default">
+                <input class="quiz-box__checkbox" type="checkbox">
+                <div class="quiz-box__choice-description">
+                    <div class="quiz-box__choice-letter-box">
+                        A
+                    </div>
+                    <div class="quiz-box__choice-answer-box">
+                        <p class="quiz-box__choice-answer">réponse 2</p>
+                    </div>
+                </div>
             </label>
-            <label class="quiz-box__choice">
-                <input class="" type="checkbox">
-                <span>réponse 3</span>
-            </label>
-            <label class="quiz-box__choice">
-                <input class="" type="checkbox">
-                <span>réponse 4</span>
+            <label class="quiz-box__choice uk-card uk-card-default">
+                <input class="quiz-box__checkbox" type="checkbox">
+                <div class="quiz-box__choice-description">
+                    <div class="quiz-box__choice-letter-box">
+                        A
+                    </div>
+                    <div class="quiz-box__choice-answer-box">
+                        <p class="quiz-box__choice-answer">réponse 3</p>
+                    </div>
+                </div>
             </label>
         </div>
     </div>

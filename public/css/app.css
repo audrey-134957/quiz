@@ -168,16 +168,49 @@ a {
     font-size: 18px;
 }
 
-.quiz-box__choices-list {
-    line-height: 3rem;
-}
-
 .quiz-box__choice {
     display: block;
+}
+
+.quiz-box__choice:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .quiz-box__question-illustration {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+input[type="checkbox"].quiz-box__checkbox {
+    display: none;
+}
+
+.quiz-box__choice-description {
+    display: flex;
+    border: solid 1px #8c62ff;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    margin: auto;
+    /* padding: 0.5rem 1rem; */
+}
+
+.quiz-box__choice-letter-box {
+    /* border-right: solid 1px red; */
+    padding: 0.5rem 1rem;
+    background-color: #8c62ff;
+    color: #fff;
+    font-weight: 700;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.quiz-box__choice-answer-box {
+    display: flex;
+    align-items: center;
+}
+
+.quiz-box__choice-answer {
+    margin-bottom: 0;
+    margin-left: 1rem;
 }
