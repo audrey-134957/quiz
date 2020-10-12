@@ -18,6 +18,9 @@
         <h2>Fin du quiz</h2>
 
         <div class="quiz-box__answers">
+            <div>
+                15 / 20
+            </div>
             
         </div>
     </div>
