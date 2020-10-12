@@ -218,16 +218,13 @@ input[type="radio"].quiz-box__radio {
 
 .quiz-box__choice-description {
     display: flex;
-    /* border: solid 1px #f61e1e; */
     border:solid 1px #f0f0f0;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
-    /* padding: 0.5rem 1rem; */
 }
 
 .quiz-box__choice-letter-box {
-    /* border-right: solid 1px red; */
     padding: 0.5rem 1rem;
     background-color: #f61e1e;
     color: #fff;
@@ -249,6 +246,5 @@ input[type="radio"].quiz-box__radio {
 
 input[type="radio"]:checked ~ div.quiz-box__choice-description {
     border: solid 1px #eb0000;
-    /* background-color: #f5f5f5 !important; */
     font-weight: 700 !important;
 }
