@@ -13,14 +13,15 @@
         <h3 class="quiz-box__title uk-card-title">Mythologie africaine</h3>
     </div>
     <div class="quiz-box__card-body uk-card-body">
-        <div class="quiz-box__question-box">
-            <span class="quiz-box__question-number">Question 1 / 20</span>
-            <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
-            <figure>
-                <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
-            </figure>
-            <div class="quiz-box__choices-list">
-                <form action="" method="post">
+        <form action="" method="post">
+
+            <div class="quiz-box__question-box">
+                <span class="quiz-box__question-number">Question 1 / 20</span>
+                <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
+                <figure>
+                    <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
+                </figure>
+                <div class="quiz-box__choices-list">
 
                     <label class="quiz-box__choice uk-card uk-card-default">
                         <input class="quiz-box__radio" type="radio" name="radio" value="1">
@@ -57,19 +58,16 @@
                             </div>
                         </div>
                     </label>
-                </form>
+                </div>
             </div>
-        </div>
-        <hr class="quiz-box__divider">
-        <div class="quiz-box__question-box">
-            <span class="quiz-box__question-number">Question 2 / 20</span>
-            <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
-            <figure>
-                <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
-            </figure>
-            <div class="quiz-box__choices-list">
-                <form action="" method="post">
-
+            <hr class="quiz-box__divider">
+            <div class="quiz-box__question-box">
+                <span class="quiz-box__question-number">Question 2 / 20</span>
+                <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
+                <figure>
+                    <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
+                </figure>
+                <div class="quiz-box__choices-list">
                     <label class="quiz-box__choice uk-card uk-card-default">
                         <input class="quiz-box__radio" type="radio" name="radio" value="1">
                         <div class="quiz-box__choice-description">
@@ -105,19 +103,16 @@
                             </div>
                         </div>
                     </label>
-                </form>
+                </div>
             </div>
-        </div>
-        <hr class="quiz-box__divider">
-        <div class="quiz-box__question-box">
-            <span class="quiz-box__question-number">Question 3 / 20</span>
-            <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
-            <figure>
-                <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
-            </figure>
-            <div class="quiz-box__choices-list">
-                <form action="" method="post">
-
+            <hr class="quiz-box__divider">
+            <div class="quiz-box__question-box">
+                <span class="quiz-box__question-number">Question 3 / 20</span>
+                <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
+                <figure>
+                    <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
+                </figure>
+                <div class="quiz-box__choices-list">
                     <label class="quiz-box__choice uk-card uk-card-default">
                         <input class="quiz-box__radio" type="radio" name="radio" value="1">
                         <div class="quiz-box__choice-description">
@@ -153,19 +148,16 @@
                             </div>
                         </div>
                     </label>
-                </form>
+                    = </div>
             </div>
-        </div>
-        <hr class="quiz-box__divider">
-        <div class="quiz-box__question-box">
-            <span class="quiz-box__question-number">Question 4 / 20</span>
-            <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
-            <figure>
-                <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
-            </figure>
-            <div class="quiz-box__choices-list">
-                <form action="" method="post">
-
+            <hr class="quiz-box__divider">
+            <div class="quiz-box__question-box">
+                <span class="quiz-box__question-number">Question 4 / 20</span>
+                <p class="quiz-box__question">Lorem ipsum dolor sit amet ?</p>
+                <figure>
+                    <img class="quiz-box__question-illustration" src="{{asset('images/african.jpg')}}" alt="">
+                </figure>
+                <div class="quiz-box__choices-list">
                     <label class="quiz-box__choice uk-card uk-card-default">
                         <input class="quiz-box__radio" type="radio" name="radio" value="1">
                         <div class="quiz-box__choice-description">
@@ -201,9 +193,9 @@
                             </div>
                         </div>
                     </label>
-                </form>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
 </div>
