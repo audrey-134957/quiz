@@ -254,5 +254,21 @@ input[type="radio"]:checked ~ div.quiz-box__choice-description {
     border: solid 1px #eb0000;
     font-weight: 700 !important;
     background-color: #fcfcfc;
+}
 
+.quiz-box__submit-button {
+    width: 100%;
+    background-color: #eb0000;
+    color: white !important;
+    padding: 0.5rem 1rem !important;
+    text-transform: none !important;
+    font-size: 20px !important;
+    margin-top: 1in !important;
+    border-radius: 5px !important;
+    font-weight: 700 !important;
+}
+
+
+.quiz-box__submit-button::hover{
+    background-color: #cc0101 !important;
 }
