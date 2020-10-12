@@ -180,12 +180,16 @@ a {
 
 /* Choix de réponse */
 
+.quiz-box__choices-list {
+    margin-top: 1in;
+}
+
 .quiz-box__choice {
     display: block;
 }
 
 .quiz-box__choice:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .quiz-box__question-illustration {
@@ -199,6 +203,7 @@ input[type="radio"].quiz-box__radio {
 }
 
 /* Boxe de la question */
+
 .quiz-box__divider {
     margin: 1in 0;
 }
