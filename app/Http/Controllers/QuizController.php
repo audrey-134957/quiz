@@ -14,11 +14,23 @@ class QuizController extends Controller
         //
     }
 
-    public function index(){
+    /**
+     * Show the quizes
+     *
+     * @return void
+     */
+    public function index()
+    {
         return view('quiz.index');
     }
 
-    public function showQuiz(){
-        return view('quiz.show-quiz');
+    /**
+     * Show the begin page
+     *
+     * @return void
+     */
+    public function startQuiz()
+    {
+        return view('quiz.start-quiz');
     }
 }

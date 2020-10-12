@@ -31,7 +31,7 @@
 
 <!-- liste des quiz -->
 <div class="quizes-list">
-    <a class="quizes-list__link" href="{{route('quiz.showQuiz', ['id' => 1, 'slug' => 'slug'])}}">
+    <a class="quizes-list__link" href="{{route('quiz.startQuiz', ['id' => 1, 'slug' => 'mythologie-africaine'])}}">
         <div class="quizes-list__quiz-box quizes-list__quiz-box--geo uk-card uk-card-default uk-card-body uk-margin-bottom">
             <span class="quizes-list__questions-number">20</span>
             <span class="quizes-list__title">Mythologie africaine</span>

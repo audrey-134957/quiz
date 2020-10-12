@@ -145,6 +145,17 @@ a {
 
 /* Quiz box */
 
+.quiz-box__introduction {
+    text-align: center;
+}
+
+.quiz-box__link {
+    border-radius: 5px !important;
+    background-color: #f61e1e;
+    padding: 0.2rem 1rem;
+    color: #fff !important;
+}
+
 .quiz-box.uk-card.uk-card-default {
     margin: 1rem;
     border-radius: 10px;
@@ -168,6 +179,9 @@ a {
     font-size: 18px;
 }
 
+
+/* CHOIX DE RÉPONSE */
+
 .quiz-box__choice {
     display: block;
 }
@@ -182,15 +196,16 @@ a {
     object-fit: cover;
 }
 
-input[type="checkbox"].quiz-box__checkbox {
+input[type="radio"].quiz-box__radio {
     display: none;
 }
+
 
 .quiz-box__question-number {
     display: block;
     float: right;
     background-color: #f61e1e;
-    color:white;
+    color: white;
     font-weight: 700;
     border-radius: 5px;
     padding: 0.2rem 1rem;
@@ -203,7 +218,8 @@ input[type="checkbox"].quiz-box__checkbox {
 
 .quiz-box__choice-description {
     display: flex;
-    border: solid 1px #f61e1e;
+    /* border: solid 1px #f61e1e; */
+    border:solid 1px #f0f0f0;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
@@ -220,6 +236,7 @@ input[type="checkbox"].quiz-box__checkbox {
     border-bottom-left-radius: 3px;
 }
 
+
 .quiz-box__choice-answer-box {
     display: flex;
     align-items: center;
@@ -228,4 +245,10 @@ input[type="checkbox"].quiz-box__checkbox {
 .quiz-box__choice-answer {
     margin-bottom: 0;
     margin-left: 1rem;
+}
+
+input[type="radio"]:checked ~ div.quiz-box__choice-description {
+    border: solid 1px #eb0000;
+    /* background-color: #f5f5f5 !important; */
+    font-weight: 700 !important;
 }
