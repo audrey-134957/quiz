@@ -226,7 +226,7 @@ input[type="radio"].quiz-box__radio {
 .quiz-box__choice-description {
     display: flex;
     border: solid 1px #f0f0f0;
-    background-color: #fcfcfc;
+    /* background-color: #fcfcfc; */
     border-radius: 5px;
     margin: auto;
 }
@@ -253,4 +253,6 @@ input[type="radio"].quiz-box__radio {
 input[type="radio"]:checked ~ div.quiz-box__choice-description {
     border: solid 1px #eb0000;
     font-weight: 700 !important;
+    background-color: #fcfcfc;
+
 }
