@@ -25,12 +25,22 @@ class QuizController extends Controller
     }
 
     /**
-     * Show the begin page
+     * Show the quiz introduction page
      *
      * @return void
      */
     public function startQuiz()
     {
         return view('quiz.start-quiz');
+    }
+
+     /**
+     * Show the quiz result page
+     *
+     * @return void
+     */
+    public function endQuiz()
+    {
+        return view('quiz.end-quiz');
     }
 }

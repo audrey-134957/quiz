@@ -21,8 +21,11 @@ $router->get('/', ['uses' => 'QuizController@index', 'as' => 'home.index']);
 $router->get('/connexion', ['uses' => 'LoginController@create', 'as' => 'login.create']);
 
 /* QUIZ */
-/* COMMENCER */
-$router->get('/quiz-{quizId}/{slug}/commencer-le-test', ['uses' => 'QuizController@startQuiz', 'as' => 'quiz.startQuiz']);
+/* Introduction au quiz */
+$router->get('/quiz-{quizId}/{slug}/commencer-le-quiz', ['uses' => 'QuizController@startQuiz', 'as' => 'quiz.startQuiz']);
 
-/* QUESTION DU QUIZ */
+/* Question du quiz */
 $router->get('/quiz-{quizId}/{slug}/question-{questionId}', ['uses' => 'QuestionController@show', 'as' => 'questions.show']);
+
+/* Résultat du quiz */
+$router->get('/quiz-{quizId}/{slug}/resultats-du-quiz', ['uses' => 'QuizController@endQuiz', 'as' => 'quiz.endQuiz']);

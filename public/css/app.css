@@ -198,6 +198,11 @@ input[type="radio"].quiz-box__radio {
     display: none;
 }
 
+/* Boxe de la question */
+.quiz-box__divider {
+    margin: 1in 0;
+}
+
 .quiz-box__question-number {
     display: block;
     float: right;
@@ -206,16 +211,16 @@ input[type="radio"].quiz-box__radio {
     font-weight: 700;
     border-radius: 5px;
     padding: 0.2rem 1rem;
+    margin-bottom: 0.5in;
 }
 
 .quiz-box__question {
     clear: right;
-    margin-top: 1in;
 }
 
 .quiz-box__choice-description {
     display: flex;
-    border:solid 1px #f0f0f0;
+    border: solid 1px #f0f0f0;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
@@ -229,7 +234,6 @@ input[type="radio"].quiz-box__radio {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-
 
 .quiz-box__choice-answer-box {
     display: flex;
