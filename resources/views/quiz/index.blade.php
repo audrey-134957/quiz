@@ -8,26 +8,13 @@
     <!-- liste des thèmes de quiz -->
     <div class="themes-list">
         <ul class="themes-list__list-items">
-            <li class="themes-list__item themes-list__item--active">
-                <a href="#" class="themes-list__link">
-                    Histoire
-                </a>
-            </li>
+            @foreach($categories as $categorie)
             <li class="themes-list__item">
                 <a href="#" class="themes-list__link">
-                    Géographie
+                    {{$categorie->name}}
                 </a>
             </li>
-            <li class="themes-list__item">
-                <a href="#" class="themes-list__link">
-                    Animaux
-                </a>
-            </li>
-            <li class="themes-list__item">
-                <a href="#" class="themes-list__link">
-                    Réseaux sociaux
-                </a>
-            </li>
+            @endforeach
         </ul>
     </div>
 

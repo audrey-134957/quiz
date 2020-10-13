@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+
 class QuizController extends Controller
 {
     /**
@@ -21,7 +23,12 @@ class QuizController extends Controller
      */
     public function index()
     {
-        return view('quiz.index');
+        $categories = Category::all();
+
+        // dd($categories);
+        return view('quiz.index', [
+            'categories' => $categories
+        ]);
     }
 
     /**
