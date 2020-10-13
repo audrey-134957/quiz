@@ -90,7 +90,24 @@
                     quizBox.css({
                         'margin': '1.5rem'
                     })
-                }
+                } else {
+                    quizBox.css({
+                        'margin': '0rem'
+                    })
+                };
+
+                $(window).on('resize', function() {
+                    if ($(window).width() < 768) {
+                        // console.log('yo');
+                        quizBox.css({
+                            'margin': '1.5rem'
+                        })
+                    } else {
+                        quizBox.css({
+                            'margin': '0rem'
+                        })
+                    };
+                });
             }
         }
         quizBox.addMargin();
