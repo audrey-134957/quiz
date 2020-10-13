@@ -29,11 +29,12 @@ a {
     margin: 1.5rem 0;
 }
 
-/* Liste des thèmes */
-
-.themes-list {
-    margin: 0.5rem;
+.box-margin{
+    margin: 1rem auto;
+    max-width: 72rem;
 }
+
+/* Liste des thèmes */
 
 .themes-list__list-items {
     overflow-x: scroll;
@@ -87,14 +88,15 @@ a {
 
 /* Quiz box */
 .quizes-list {
-    margin: 1in 0;
+    margin: 1in auto;
 }
 
 @media screen and (min-width: 768px) {
     .quizes-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(auto, 23rem));
-        gap: 1rem !important;
+        gap: 1.5rem !important;
+        justify-content: center;
     }
 }
 
