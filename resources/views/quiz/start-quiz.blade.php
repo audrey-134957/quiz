@@ -17,7 +17,7 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-        <a class="quiz-box__link" href="{{route('questions.show', ['quizId' => 1, 'slug' => 'mythologie-africaine', 'questionId' => 1])}}">Commencer le test</a>
+        <a class="quiz-box__link" href="{{route('questions.show', ['quizId' => 1, 'slug' => 'mythologie-africaine'])}}">Commencer le test</a>
     </div>
 </div>
 
