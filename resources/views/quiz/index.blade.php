@@ -32,35 +32,35 @@
 <!-- liste des quiz -->
 <div class="quizes-list">
     <a class="quizes-list__link" href="{{route('quiz.startQuiz', ['id' => 1, 'slug' => 'mythologie-africaine'])}}">
-        <div class="quizes-list__quiz-box quizes-list__quiz-box--geo uk-card uk-card-default uk-card-body uk-margin-bottom">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--geo uk-card uk-card-default uk-card-body ">
             <span class="quizes-list__questions-number">20</span>
             <span class="quizes-list__title">Mythologie africaine</span>
         </div>
     </a>
 
     <a class="quizes-list__link" href="#">
-        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body uk-margin-bottom">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body ">
             <span class="quizes-list__questions-number">20</span>
             <span class="quizes-list__title">Première guerre mondiale</span>
         </div>
     </a>
 
     <a class="quizes-list__link" href="#">
-        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body uk-margin-bottom">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body ">
             <span class="quizes-list__questions-number">20</span>
             <span class="quizes-list__title">Le 3e art</span>
         </div>
     </a>
 
     <a class="quizes-list__link" href="#">
-        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body uk-margin-bottom">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body ">
             <span class="quizes-list__questions-number">20</span>
             <span class="quizes-list__title">Première guerre mondiale</span>
         </div>
     </a>
 
     <a class="quizes-list__link" href="#">
-        <div class="quizes-list__quiz-box quizes-list__quiz-box--social-network uk-card uk-card-default uk-card-body uk-margin-bottom">
+        <div class="quizes-list__quiz-box quizes-list__quiz-box--social-network uk-card uk-card-default uk-card-body ">
             <span class="quizes-list__questions-number">20</span>
             <span class="quizes-list__title">Seconde guerre mondiale</span>
         </div>
@@ -73,5 +73,28 @@
         </div>
     </a>
 </div>
+
+@endsection
+
+@section('js')
+<script>
+    // self executing function here
+    (function() {
+
+        var quizBox = {
+            addMargin: function() {
+                var quizBox = $('.quizes-list__quiz-box');
+
+                if ($(window).width() < 768) {
+                    // console.log('yo');
+                    quizBox.css({
+                        'margin': '1.5rem'
+                    })
+                }
+            }
+        }
+        quizBox.addMargin();
+    })();
+</script>
 
 @endsection

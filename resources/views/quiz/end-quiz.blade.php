@@ -4,7 +4,7 @@
 @section('layout-content')
 
 <div>
-    <a href="#">retour aux quiz</a>
+    <a href="{{route('home.index')}}">retour aux quiz</a>
 </div>
 
 <div class="quiz-box uk-card uk-card-default uk-card-body">
@@ -197,7 +197,7 @@
             </div>
         </div>
     </div>
-    <a class="quiz-box__back-to-quiz-list uk-button">Retour aux quiz</a>
+    <a class="quiz-box__back-to-quiz-list uk-button" href="{{route('home.index')}}">Retour aux quiz</a>
 </div>
 
 @endsection
