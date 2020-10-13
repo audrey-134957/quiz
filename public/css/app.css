@@ -114,23 +114,6 @@ a {
     width: 100%;
 }
 
-.quizes-list__quiz-box--geo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/geography.jpg") !important;
-}
-
-.quizes-list__quiz-box--history {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/history.jpg") !important;
-}
-
-.quizes-list__quiz-box--social-network {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)),
-        url("/images/boxes/social-networks.jpg") !important;
-}
-
-.quizes-list__quiz-box--wild {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url("/images/boxes/wild.jpg") !important;
-}
-
 .quizes-list__questions-number {
     float: right;
     background-color: #fff;

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Quiz;
 
 class QuizController extends Controller
 {
@@ -25,9 +26,15 @@ class QuizController extends Controller
     {
         $categories = Category::all();
 
+        $quizes = Quiz::all();
+
+        // dd($quizes);
+
+
         // dd($categories);
         return view('quiz.index', [
-            'categories' => $categories
+            'categories' => $categories,
+            'quizes' => $quizes
         ]);
     }
 
@@ -36,9 +43,13 @@ class QuizController extends Controller
      *
      * @return void
      */
-    public function startQuiz()
+    public function startQuiz($quizId)
     {
-        return view('quiz.start-quiz');
+        $quiz = Quiz::findOrFail($quizId);
+
+        return view('quiz.start-quiz', [
+            'quiz' => $quiz
+        ]);
     }
 
      /**

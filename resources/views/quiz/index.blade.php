@@ -20,47 +20,14 @@
 
     <!-- liste des quiz -->
     <div class="quizes-list">
-        <a class="quizes-list__link" href="{{route('quiz.startQuiz', ['id' => 1, 'slug' => 'mythologie-africaine'])}}">
-            <div class="quizes-list__quiz-box quizes-list__quiz-box--geo uk-card uk-card-default uk-card-body ">
+        @foreach($quizes as $quiz)
+        <a class="quizes-list__link" href="{{route('quiz.startQuiz', ['quizId' => $quiz->id, 'slug' => $quiz->slug])}}">
+            <div class="quizes-list__quiz-box quizes-list__quiz-box--geo uk-card uk-card-default uk-card-body" style="background-image:linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)), url('/images/boxes/{{$quiz->illustration}}') !important;">
                 <span class="quizes-list__questions-number">20</span>
-                <span class="quizes-list__title">Mythologie africaine</span>
+                <span class="quizes-list__title">{{$quiz->title}}</span>
             </div>
         </a>
-
-        <a class="quizes-list__link" href="#">
-            <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body ">
-                <span class="quizes-list__questions-number">20</span>
-                <span class="quizes-list__title">Première guerre mondiale</span>
-            </div>
-        </a>
-
-        <a class="quizes-list__link" href="#">
-            <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body ">
-                <span class="quizes-list__questions-number">20</span>
-                <span class="quizes-list__title">Le 3e art</span>
-            </div>
-        </a>
-
-        <a class="quizes-list__link" href="#">
-            <div class="quizes-list__quiz-box quizes-list__quiz-box--history uk-card uk-card-default uk-card-body ">
-                <span class="quizes-list__questions-number">20</span>
-                <span class="quizes-list__title">Première guerre mondiale</span>
-            </div>
-        </a>
-
-        <a class="quizes-list__link" href="#">
-            <div class="quizes-list__quiz-box quizes-list__quiz-box--social-network uk-card uk-card-default uk-card-body ">
-                <span class="quizes-list__questions-number">20</span>
-                <span class="quizes-list__title">Seconde guerre mondiale</span>
-            </div>
-        </a>
-
-        <a class="quizes-list__link" href="#">
-            <div class="quizes-list__quiz-box quizes-list__quiz-box--wild uk-card uk-card-default uk-card-body">
-                <span class="quizes-list__questions-number">20</span>
-                <span class="quizes-list__title">Mythologie grecque</span>
-            </div>
-        </a>
+        @endforeach
     </div>
 
 

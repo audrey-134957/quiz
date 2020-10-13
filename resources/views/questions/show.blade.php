@@ -10,7 +10,7 @@
 <div class="quiz-box uk-card uk-card-default">
     <div class="quiz-box__card-header uk-card-header">
         <span class="quiz-box__questions-number">20Q</span>
-        <h3 class="quiz-box__title uk-card-title">Mythologie africaine</h3>
+        <h3 class="quiz-box__title uk-card-title">{{$quiz->title}}</h3>
     </div>
     <div class="quiz-box__card-body uk-card-body">
         <form action="" method="post">

@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
-use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 
 class Quiz extends Model
 {
 
+
+    protected $table = 'quizes';
     /**
      * The attributes that are mass assignable.
      *
@@ -20,5 +21,9 @@ class Quiz extends Model
 
     public function category(){
         return $this->belongsTo(Category::class);
+    }
+
+    public function questions(){
+        return $this->hasMany(Question::class);
     }
 }

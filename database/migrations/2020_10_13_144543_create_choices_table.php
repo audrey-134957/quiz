@@ -17,6 +17,7 @@ class CreateChoicesTable extends Migration
             $table->id();
             $table->string('choice', 1000);
             $table->foreignId('question_id')->constrained('questions');
+            $table->foreignId('quiz_id')->constrained('quizes');
             $table->boolean('is_correct');
             $table->timestamps();
         });
