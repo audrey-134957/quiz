@@ -197,6 +197,7 @@
             </div>
         </div>
     </div>
+    <a class="quiz-box__back-to-quiz-list uk-button">Retour aux quiz</a>
 </div>
 
 @endsection
