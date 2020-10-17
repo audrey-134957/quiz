@@ -15,6 +15,7 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('question_identifier');
             $table->string('question', 1000);
             $table->string('illustration', 3000)->nullable();
             $table->foreignId('quiz_id')->constrained('quizes');
