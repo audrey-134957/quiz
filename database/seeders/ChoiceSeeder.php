@@ -133,77 +133,77 @@ class ChoiceSeeder extends Seeder
 
 
 
-        /* QUESTION 6 / QUIZ 2 */
+        /* QUESTION 1 / QUIZ 2 */
         DB::table('choices')->insert([
             'choice' => '2026',
             'quiz_id' => 2,
-            'question_identifier' => 6,
+            'question_identifier' => 1,
             'is_correct' => 0
         ]);
 
         DB::table('choices')->insert([
             'choice' => '2022',
             'quiz_id' => 2,
-            'question_identifier' => 6,
+            'question_identifier' => 1,
             'is_correct' => 1
         ]);
 
         DB::table('choices')->insert([
             'choice' => '2028',
             'quiz_id' => 2,
-            'question_identifier' => 6,
+            'question_identifier' => 1,
             'is_correct' => 0
         ]);
 
 
-        /* QUESTION 7 / QUIZ 2 */
+        /* QUESTION 2 / QUIZ 2 */
 
         DB::table('choices')->insert([
             'choice' => 'des sénateurs',
             'quiz_id' => 2,
-            'question_identifier' => 7,
+            'question_identifier' => 2,
             'is_correct' => 0
         ]);
 
         DB::table('choices')->insert([
             'choice' => 'des juges',
             'quiz_id' => 2,
-            'question_identifier' => 7,
+            'question_identifier' =>2,
             'is_correct' => 0
         ]);
 
         DB::table('choices')->insert([
             'choice' => "des eurodéputés français",
             'quiz_id' => 2,
-            'question_identifier' => 7,
+            'question_identifier' => 2,
             'is_correct' => 1
         ]);
 
 
-        /* QUESTION 8 / QUIZ 2 */
+        /* QUESTION 3 / QUIZ 2 */
 
         DB::table('choices')->insert([
             'choice' => '79',
             'quiz_id' => 2,
-            'question_identifier' => 8,
+            'question_identifier' => 3,
             'is_correct' => 1
         ]);
 
         DB::table('choices')->insert([
             'choice' => '96',
             'quiz_id' => 2,
-            'question_identifier' => 8,
+            'question_identifier' => 3,
             'is_correct' => 0
         ]);
 
         DB::table('choices')->insert([
             'choice' => '54',
             'quiz_id' => 2,
-            'question_identifier' => 8,
+            'question_identifier' => 3,
             'is_correct' => 0
         ]);
 
-        /* QUESTION 9 / QUIZ 2 */
+        /* QUESTION 4 / QUIZ 2 */
 
         DB::table('choices')->insert([
             'choice' => '2 ans',
@@ -371,7 +371,7 @@ class ChoiceSeeder extends Seeder
         DB::table('choices')->insert([
             'choice' => "L'abdomène",
             'quiz_id' => 4,
-            'question_identifier' => 5,
+            'question_identifier' => 1,
             'is_correct' => 1
         ]);
 

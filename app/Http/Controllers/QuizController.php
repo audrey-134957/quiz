@@ -28,10 +28,6 @@ class QuizController extends Controller
 
         $quizes = Quiz::all();
 
-        // dd($quizes);
-
-
-        // dd($categories);
         return view('quiz.index', [
             'categories' => $categories,
             'quizes' => $quizes
@@ -45,7 +41,10 @@ class QuizController extends Controller
      */
     public function startQuiz($quizId)
     {
+
         $quiz = Quiz::findOrFail($quizId);
+
+        // dd($quiz);
 
         return view('quiz.start-quiz', [
             'quiz' => $quiz

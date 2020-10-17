@@ -8,6 +8,7 @@ class Quiz extends Model
 {
 
 
+
     protected $table = 'quizes';
     /**
      * The attributes that are mass assignable.
@@ -26,4 +27,5 @@ class Quiz extends Model
     public function questions(){
         return $this->hasMany(Question::class);
     }
+
 }

@@ -4,7 +4,7 @@
 @section('layout-content')
 
 <div>
-    <a href="#">retour aux quiz</a>
+    <a href="{{route('home.index')}}">retour aux quiz</a>
 </div>
 
 <div class="quiz-box uk-card uk-card-default uk-card-body">
@@ -13,7 +13,7 @@
     </figure>
 
     <div class="quiz-box__introduction">
-        <h1>Mythologie africaine</h1>
+        <h1>{{$quiz->title}}</h1>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 

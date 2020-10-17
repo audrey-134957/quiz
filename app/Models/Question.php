@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Question extends Model
 {
 
+
+    // protected $with = ['choices'];
+
     /**
      * The attributes that are mass assignable.
      *
@@ -21,7 +24,7 @@ class Question extends Model
         return $this->belongsTo(Quiz::class);
     }
 
-    public function choice(){
+    public function choices(){
         return $this->hasMany(Choice::class);
     }
 }
