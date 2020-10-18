@@ -58,7 +58,7 @@ class QuizController extends Controller
      *
      * @return void
      */
-    public function endQuiz(Request $request, $quizId, $slug)
+    public function postShow(Request $request, $quizId, $slug)
     {
 
         $quiz = Quiz::findOrFail($quizId);

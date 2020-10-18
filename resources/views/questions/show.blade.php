@@ -13,7 +13,7 @@
         <h3 class="quiz-box__title uk-card-title">{{$quiz->title}}</h3>
     </div>
     <div class="quiz-box__card-body uk-card-body">
-        <form action="{{route('quiz.endQuiz', ['quizId' => $quiz->id, 'slug' => $quiz->slug])}}" method="POST">
+        <form action="{{route('quiz.post', ['quizId' => $quiz->id, 'slug' => $quiz->slug])}}" method="POST">
             <input type="hidden" name="_token" value="{{request()->segment(3)}}">
             <div class="quiz-box__questions-list">
                 @foreach($quiz->questions as $key => $question)
