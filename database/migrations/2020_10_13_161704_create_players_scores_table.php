@@ -16,6 +16,7 @@ class CreatePlayersScoresTable extends Migration
         Schema::create('players_scores', function (Blueprint $table) {
             $table->id();
             $table->foreignId('player_score_id')->constrained('players_scores');
+            $table->foreignId('quiz_id')->constrained('quizes');
             $table->unsignedTinyInteger('score');
             $table->timestamps();
         });
