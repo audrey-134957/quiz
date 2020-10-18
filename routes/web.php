@@ -28,4 +28,4 @@ $router->get('/quiz-{quizId}/{slug}/commencer-le-quiz', ['uses' => 'QuizControll
 $router->get('/quiz-{quizId}/{slug}', ['uses' => 'QuestionController@show', 'as' => 'questions.show']);
 
 /* Résultat du quiz */
-$router->get('/quiz-{quizId}/{slug}/resultats-du-quiz', ['uses' => 'QuizController@endQuiz', 'as' => 'quiz.endQuiz']);
+$router->post('/quiz-{quizId}/{slug}/resultats-du-quiz', ['uses' => 'QuizController@endQuiz', 'as' => 'quiz.endQuiz']);

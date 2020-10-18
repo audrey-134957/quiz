@@ -4,7 +4,7 @@
 @section('layout-content')
 
 <div>
-    <a href="#">retour aux quiz</a>
+    <a href="{{route('home.index')}}">retour aux quiz</a>
 </div>
 
 <div class="quiz-box uk-card uk-card-default">
@@ -13,9 +13,10 @@
         <h3 class="quiz-box__title uk-card-title">{{$quiz->title}}</h3>
     </div>
     <div class="quiz-box__card-body uk-card-body">
-        <form action="" method="post">
+        <form action="{{route('quiz.endQuiz', ['quizId' => $quiz->id, 'slug' => $quiz->slug])}}" method="POST">
+            <input type="hidden" name="_token" value="{{request()->segment(3)}}">
             <div class="quiz-box__questions-list">
-                @foreach($quiz->questions as $question)
+                @foreach($quiz->questions as $key => $question)
 
                 <div class="quiz-box__question-box">
                     <span class="quiz-box__question-number">Question {{$question->question_identifier}} / 20</span>
@@ -26,13 +27,14 @@
                     </figure>
                     @endif
                     <div class="quiz-box__choices-list">
+
                         @php
                         $choices = App\Models\Choice::where('question_identifier', $question->question_identifier)->where('quiz_id', $quiz->id)->get();
                         @endphp
 
                         @foreach($choices->shuffle()->all() as $choice)
                         <label class="quiz-box__choice uk-card uk-card-default">
-                            <input class="quiz-box__radio" type="radio" name="radio" value="{{$choice->id}}">
+                            <input class="quiz-box__radio" type="radio" name="question_{{$question->question_identifier}}_choice" value="{{$choice->id}}">
                             <div class="quiz-box__choice-description">
                                 <div class="quiz-box__choice-letter-box">
                                     A
@@ -43,6 +45,10 @@
                             </div>
                         </label>
                         @endforeach
+                    </div>
+                    <div class="uk-alert-danger" uk-alert>
+                        <a class="uk-alert-close"></a>
+                        <p>lorem ipsum</p>
                     </div>
                 </div>
                 <hr class="quiz-box__divider">
