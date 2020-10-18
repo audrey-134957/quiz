@@ -262,14 +262,14 @@ class ChoiceSeeder extends Seeder
         DB::table('choices')->insert([
             'choice' => 'Braga',
             'quiz_id' => 3,
-            'question_identifier' => 3,
+            'question_identifier' => 1,
             'is_correct' => 0
         ]);
 
         DB::table('choices')->insert([
             'choice' => 'Porto',
             'quiz_id' => 3,
-            'question_identifier' => 3,
+            'question_identifier' => 1,
             'is_correct' => 0
         ]);
 

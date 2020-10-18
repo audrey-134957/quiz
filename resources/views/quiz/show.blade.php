@@ -13,13 +13,13 @@
         <h3 class="quiz-box__title uk-card-title">{{$quiz->title}}</h3>
     </div>
     <div class="quiz-box__card-body uk-card-body">
-        <form action="{{route('quiz.post', ['quizId' => $quiz->id, 'slug' => $quiz->slug])}}" method="POST">
+        <form action="{{route('quiz.showPost', ['quizId' => $quiz->id, 'slug' => $quiz->slug])}}" method="POST">
             <input type="hidden" name="_token" value="{{request()->segment(3)}}">
             <div class="quiz-box__questions-list">
                 @foreach($quiz->questions as $key => $question)
 
                 <div class="quiz-box__question-box">
-                    <span class="quiz-box__question-number">Question {{$question->question_identifier}} / 20</span>
+                    <span class="quiz-box__question-number">Question {{$question->question_identifier .' / '. $quiz->questions->count() }}</span>
                     <p class="quiz-box__question">{{$question->question}}</p>
                     @if(!empty($question->illustration))
                     <figure>
@@ -33,6 +33,7 @@
                         @endphp
 
                         @foreach($choices->shuffle()->all() as $choice)
+
                         <label class="quiz-box__choice uk-card uk-card-default">
                             <input class="quiz-box__radio" type="radio" name="question_{{$question->question_identifier}}_choice" value="{{$choice->id}}">
                             <div class="quiz-box__choice-description">

@@ -2,6 +2,8 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -15,6 +17,8 @@
 
 
 /* ACCUEIL */
+
+
 $router->get('/', ['uses' => 'QuizController@index', 'as' => 'home.index']);
 
 /* CONNEXION */
@@ -25,9 +29,9 @@ $router->get('/connexion', ['uses' => 'LoginController@create', 'as' => 'login.c
 $router->get('/quiz-{quizId}/{slug}/commencer-le-quiz', ['uses' => 'QuizController@startQuiz', 'as' => 'quiz.startQuiz']);
 
 /* Question du quiz */
-$router->get('/quiz-{quizId}/{slug}', ['uses' => 'QuestionController@show', 'as' => 'questions.show']);
+$router->get('/quiz-{quizId}/{slug}', ['uses' => 'QuizController@show', 'as' => 'quiz.show']);
 
-$router->post('/quiz-{quizId}/{slug}', ['uses' => 'QuizController@postShow', 'as' => 'quiz.post']);
+$router->post('/quiz-{quizId}/{slug}', ['uses' => 'QuizController@showPost', 'as' => 'quiz.showPost']);
 
 /* Résultat du quiz */
-$router->get('/quiz-{quizId}/{slug}/resultats-du-quiz', ['uses' => 'QuizController@endQuiz', 'as' => 'quiz.endQuiz']);
+$router->get('/quiz-{quizId}/{slug}/resultats-du-quiz/joueur-{player}', ['uses' => 'QuizController@endQuiz', 'as' => 'quiz.endQuiz']);
